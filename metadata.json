@@ -1,0 +1,10 @@
+{
+  "name": "TraceCam",
+  "description": "A high-performance tracing and drawing application with camera overlay capabilities.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

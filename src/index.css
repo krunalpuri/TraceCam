@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  --color-surface: #131313;
+  --color-background: #080808;
+  --color-on-surface: #E5E5E5;
+  --color-on-surface-variant: #A0A0A0;
+  --color-surface-container: #1A1A1A;
+  --color-surface-container-low: #121212;
+  --color-surface-container-high: #222222;
+  --color-surface-container-highest: #2A2A2A;
+  /* Elegant Gold Accent */
+  --color-primary: #D4AF37;
+  --color-primary-container: #1A1A1A;
+  --color-on-primary-container: #D4AF37;
+  --color-outline: rgba(255, 255, 255, 0.1);
+  --color-outline-variant: rgba(255, 255, 255, 0.05);
+  --color-error: #FF4D4D;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.glass-panel {
+  @apply backdrop-blur-md border border-white/5;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.accent-text {
+  color: #D4AF37;
+}
+
+.pill-style {
+  @apply border border-[#D4AF37]/30 px-3 py-1 rounded-full text-[10px] uppercase tracking-[0.1em] font-semibold;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
